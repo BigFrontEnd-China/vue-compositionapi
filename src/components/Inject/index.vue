@@ -12,7 +12,7 @@ export default {
   },
   setup(props) {
     const prv = ref(0)
-    provide(prv)
+    provide('provide', prv)
   }
 }
 </script>

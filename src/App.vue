@@ -6,7 +6,8 @@
   <!-- <Readonly /> -->
   <!-- <WatchEffect /> -->
   <!--  <LifeCycle /> -->
-  <Inject />
+  <!-- <Inject /> -->
+  <!-- <Refs /> -->
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import Readonly from './components/ReactiveApi/Readonly.vue'
 import WatchEffect from './components/ReactiveApi/WatchEffect.vue'
 import LifeCycle from './components/LifeCycle/index.vue'
 import Inject from './components/Inject/index.vue'
+import Refs from './components/Refs/index.vue'
 export default {
   name: 'App',
   components: {
@@ -26,7 +28,8 @@ export default {
     Readonly,
     WatchEffect,
     LifeCycle,
-    Inject
+    Inject,
+    Refs
   }
 }
 </script>

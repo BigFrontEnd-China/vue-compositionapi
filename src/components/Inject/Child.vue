@@ -1,13 +1,18 @@
 <template>
   <div>{{prv}}</div>
+  <button @click="increment">change inject value</button>
 </template>
 <script>
-import { inject, ref } from 'vue'
+import { inject } from 'vue'
 export default {
   setup() {
-    const prv = inject(ref('light'))
+    const prv = inject('provide')
+    function increment() {
+      prv.value++
+    }
     return {
-      prv
+      prv,
+      increment
     }
   }
 }
